@@ -1,0 +1,13 @@
+Flask==0.12
+Jinja2==2.9.5
+MarkupSafe==1.0
+PyYAML==3.12
+Werkzeug==0.12
+argparse==1.2.1
+click==6.7
+flasgger==0.5.14
+functools32==3.2.3-2
+itsdangerous==0.24
+jsonschema==2.6.0
+mistune==0.7.3
+wsgiref==0.1.2
