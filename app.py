@@ -100,7 +100,7 @@ def get_employee(employee_id):
 @app.route('/employee', methods=['POST'])
 def create_employee():
     """
-    Adds an employee
+    Adds a single employee
     ---
     paths:
     /employee/:
