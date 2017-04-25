@@ -17,10 +17,10 @@ $ . venv/bin/activate
 $  cd rest-employee/
 $ pip install -r requirements.txt
 
-***Now run:***
 
+**Now run:**
 ```sh
- python app.py
+$ python app.py
 
 And go to: http://localhost:5000/apidocs/
 
