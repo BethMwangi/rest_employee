@@ -1,7 +1,13 @@
 from flask import Flask, jsonify, request
 from flasgger import Swagger
-from flask.views import View
+
+
 app = Flask(__name__)
+app.config['SWAGGER'] = {
+    'title': 'My RESTFul Employee API',
+    'description':'This is an Employee API',
+    'ui version': 3
+}
 
 Swagger(app)
 
@@ -40,11 +46,10 @@ employees = [
 @app.route('/employee', methods=['GET'])
 def list_employees():
     """
-    This endpoint returns 
-    a list of employees
+    This endpoint returns a list of employees
     ---
     tags:
-      - Employee Api
+      - EmployeeApi
     responses:
       200:
         description: "Successfully got info"
@@ -64,7 +69,7 @@ def list_employees():
 @app.route('/employee/<int:employee_id>', methods=['GET'])
 def get_employee(employee_id):
     """
-    A single employee
+    This endpoint returns a single employee by passing the Id no of an employee
     ---
     paths:
     /employee/{employee_id}:
@@ -95,7 +100,7 @@ def get_employee(employee_id):
 @app.route('/employee', methods=['POST'])
 def create_employee():
     """
-    A single employee
+    Adds an employee
     ---
     paths:
     /employee/:
