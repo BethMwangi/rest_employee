@@ -24,5 +24,13 @@ $ pip install -r requirements.txt
 $ python app.py
 ```
   And go to: http://localhost:5000/apidocs/index.html?url=/spec
+  This is what you will see
+  
+  ![rest](https://cloud.githubusercontent.com/assets/17563027/25380713/e3338f4c-29b9-11e7-817f-91b98d5c615d.png)
+  
+ 
+  
+  
+
 
   
