@@ -23,6 +23,6 @@ $ pip install -r requirements.txt
 ```sh
 $ python app.py
 ```
-  And go to: http://localhost:5000/apidocs/
+  And go to: http://localhost:5000/apidocs/index.html?url=/spec
 
   
